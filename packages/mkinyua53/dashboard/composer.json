@@ -1,0 +1,27 @@
+{
+    "name": "mkinyua53/tailwind-dashboard",
+    "description": "A Laravel Dashboard for admin using TailwindCSS",
+    "type": "project",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mwatha Kinyua",
+            "email": "mwatha.kinyua@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MKinyua53\\Dashboard\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mkinyua53\\Dashboard\\DashboardServiceProvider"
+            ]
+        }
+    }
+}

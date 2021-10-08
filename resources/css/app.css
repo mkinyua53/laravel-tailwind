@@ -1,0 +1,59 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.header-nav {
+  @apply h-14 w-full z-10 fixed;
+  box-shadow: 1px 2px 5px 0px grey;
+}
+.main-content {
+  @apply flex flex-row h-full;
+  padding-top: theme('height.14');
+}
+.nav-link {
+  @apply flex flex-row w-full border-b;
+}
+.nav-link:hover {
+  @apply scale-105 transform;
+}
+.nav-icon {
+  @apply  w-auto self-center px-2;
+}
+.nav-content {
+  @apply  self-center pl-1 w-full;
+}
+.nav-subtitle {
+  @apply text-xs w-full;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* width: 100px; */
+}
+.content {
+  @apply w-full min-h-full overflow-auto p-3;
+}
+.main-nav {
+  @apply pt-2 relative border-r overflow-x-hidden overflow-y-auto h-full;
+  min-width: 25vw;
+}
+.group {
+  color: inherit;
+}
+.spacer {
+  @apply flex-grow;
+}
+.app-bar-item {
+  @apply inline-grid px-4 cursor-pointer;
+}
+/* .app-bar-item:first-child {
+  @apply pl-1;
+}
+.app-bar-item:last-child {
+  @apply pr-1;
+} */
+@media (max-width: theme('screens.sm')) {
+  .main-nav {
+    @apply fixed;
+  }
+}
